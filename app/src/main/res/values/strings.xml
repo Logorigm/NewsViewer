@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsHub</string>
+
+    <!-- Navigation -->
+    <string name="nav_feed">Лента</string>
+    <string name="nav_categories">Категории</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_sources">Источники</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Categories -->
+    <string name="cat_main">Главное</string>
+    <string name="cat_tech">Технологии</string>
+    <string name="cat_ai">ИИ</string>
+    <string name="cat_science">Наука и космос</string>
+    <string name="cat_games">Игры</string>
+    <string name="cat_internet">Интернет-культура</string>
+    <string name="cat_entertainment">Кино и развлечения</string>
+    <string name="cat_world">Россия и мир</string>
+    <string name="cat_incidents">Происшествия</string>
+    <string name="cat_economy">Экономика и бизнес</string>
+    <string name="cat_sport">Спорт</string>
+    <string name="cat_health">Здоровье</string>
+
+    <!-- Actions -->
+    <string name="action_search">Поиск</string>
+    <string name="action_refresh">Обновить</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_back">Назад</string>
+    <string name="action_clear">Очистить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_close">Закрыть</string>
+    <string name="action_confirm">Подтвердить</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_done">Готово</string>
+    <string name="action_reset">Сбросить</string>
+    <string name="action_retry">Повторить</string>
+    <string name="action_scroll_top">Наверх</string>
+    <string name="action_add_favorite">Добавить в избранное</string>
+    <string name="action_remove_favorite">Убрать из избранного</string>
+
+    <!-- Feed -->
+    <string name="mode_all">Всё</string>
+    <string name="mode_no_politics">Без политики</string>
+    <string name="mode_interesting">Интересное</string>
+    <string name="card_time">· %1$s</string>
+    <string name="badge_demo">ДЕМО</string>
+    <string name="badge_demo_long">Демонстрационные данные — не новость</string>
+    <string name="badge_politics">Политика</string>
+    <string name="why_button">Почему?</string>
+    <string name="why_hidden_button">Почему скрыто?</string>
+    <string name="why_title">Почему в подборке</string>
+    <string name="why_more_like">Больше: %1$s</string>
+    <string name="why_less_like">Меньше: %1$s</string>
+    <string name="why_hidden_title">Почему это считается политикой</string>
+    <string name="why_hidden_message">Сработали правила фильтра: %1$s.\n\nЕсли это ошибка, отметьте публикацию как «не политика». Правила можно посмотреть и изменить в настройках.</string>
+    <string name="filter_ungrouped">без группировки</string>
+    <string name="filters_title">Фильтры ленты</string>
+    <string name="filters_period">Период</string>
+    <string name="filters_sort">Сортировка</string>
+    <string name="filters_source">Источник</string>
+    <string name="filters_all_sources">Все источники</string>
+    <string name="filters_apply">Применить</string>
+    <string name="filters_reset">По умолчанию</string>
+    <string name="period_day">За день</string>
+    <string name="period_week">За неделю</string>
+    <string name="period_month">За месяц</string>
+    <string name="period_year">За год</string>
+    <string name="period_all">За всё время</string>
+    <string name="sort_newest">Сначала новые</string>
+    <string name="sort_sources">Больше источников</string>
+    <string name="banner_offline">Нет подключения к интернету. Показаны сохранённые публикации.</string>
+    <string name="hidden_title">Скрытые публикации</string>
+    <string name="hidden_explanation">Эти сюжеты фильтр отметил как политические. Они не удалены — нажмите «Почему скрыто?», чтобы увидеть причину или отменить пометку.</string>
+    <string name="hidden_empty_title">Скрытых публикаций нет</string>
+    <string name="hidden_empty_message">За выбранный период фильтр ничего не отметил как политику.</string>
+    <string name="empty_no_sources_title">Нет активных источников</string>
+    <string name="empty_no_sources_message">Включите источники или добавьте свои — ленты RSS, сайты или публичные Telegram-каналы.</string>
+    <string name="empty_no_sources_action">Открыть источники</string>
+    <string name="empty_first_title">Лента пока пуста</string>
+    <string name="empty_first_message">Обновите ленту, чтобы загрузить свежие публикации. Загруженные новости останутся доступны и без интернета.</string>
+    <string name="empty_period_title">Нет публикаций за этот период</string>
+    <string name="empty_period_message">Попробуйте расширить период или выбрать другие фильтры.</string>
+    <string name="empty_period_action">Показать за всё время</string>
+    <string name="empty_nothing_title">Ничего не найдено</string>
+    <string name="empty_nothing_message">По выбранным фильтрам публикаций нет.</string>
+    <string name="error_offline_title">Нет подключения</string>
+    <string name="error_offline_message">Не удалось связаться с источниками. Проверьте интернет и попробуйте ещё раз.</string>
+
+    <plurals name="sources_count">
+        <item quantity="one">%d источник</item>
+        <item quantity="few">%d источника</item>
+        <item quantity="many">%d источников</item>
+        <item quantity="other">%d источника</item>
+    </plurals>
+    <plurals name="banner_hidden_politics">
+        <item quantity="one">Скрыта %d публикация о политике · Показать</item>
+        <item quantity="few">Скрыто %d публикации о политике · Показать</item>
+        <item quantity="many">Скрыто %d публикаций о политике · Показать</item>
+        <item quantity="other">Скрыто %d публикации о политике · Показать</item>
+    </plurals>
+    <plurals name="banner_failed_sources">
+        <item quantity="one">Не удалось обновить %d источник · Подробнее</item>
+        <item quantity="few">Не удалось обновить %d источника · Подробнее</item>
+        <item quantity="many">Не удалось обновить %d источников · Подробнее</item>
+        <item quantity="other">Не удалось обновить %d источника · Подробнее</item>
+    </plurals>
+    <plurals name="new_items_snackbar">
+        <item quantity="one">%d новая публикация</item>
+        <item quantity="few">%d новые публикации</item>
+        <item quantity="many">%d новых публикаций</item>
+        <item quantity="other">%d новой публикации</item>
+    </plurals>
+
+    <!-- "Interesting" reasons -->
+    <string name="reason_fresh_now">Свежая: опубликована меньше часа назад</string>
+    <plurals name="reason_fresh_hours">
+        <item quantity="one">Свежая: опубликована %d час назад</item>
+        <item quantity="few">Свежая: опубликована %d часа назад</item>
+        <item quantity="many">Свежая: опубликована %d часов назад</item>
+        <item quantity="other">Свежая: опубликована %d часа назад</item>
+    </plurals>
+    <plurals name="reason_multi_source">
+        <item quantity="one">О событии сообщает %d независимый источник</item>
+        <item quantity="few">О событии сообщают %d независимых источника</item>
+        <item quantity="many">О событии сообщают %d независимых источников</item>
+        <item quantity="other">О событии сообщают %d независимых источника</item>
+    </plurals>
+    <string name="reason_liked_topic">Вы отметили тему «%1$s» как интересную</string>
+    <string name="reason_read_often">Вы часто читаете тему «%1$s»</string>
+    <string name="reason_default_topic">Тема «%1$s» входит в подборку интересного по умолчанию</string>
+    <string name="reason_footer">Число источников показывает, насколько широко событие освещается, но не подтверждает его достоверность. Один источник занимает не больше пятой части подборки.</string>
+
+    <!-- Article -->
+    <string name="article_title">Публикация</string>
+    <string name="article_open_original">Читать в источнике</string>
+    <string name="article_fragment_notice">Показан короткий фрагмент. Полный текст и права на него принадлежат источнику.</string>
+    <string name="article_no_summary">Источник не прислал описание. Откройте оригинал, чтобы прочитать публикацию.</string>
+    <string name="article_missing">Публикация больше недоступна</string>
+    <string name="article_date_estimated">время загрузки</string>
+    <string name="cluster_times">Первая публикация: %1$s · последняя: %2$s</string>
+    <string name="cluster_row_source">%1$s · %2$s</string>
+    <string name="cluster_row_cd">%1$s: %2$s. Открыть оригинал</string>
+    <plurals name="cluster_header">
+        <item quantity="one">Об этом сообщил %d источник</item>
+        <item quantity="few">Об этом сообщили %d источника</item>
+        <item quantity="many">Об этом сообщили %d источников</item>
+        <item quantity="other">Об этом сообщили %d источника</item>
+    </plurals>
+    <string name="politics_reason">Отмечено как политика. Сработали правила: %1$s.</string>
+    <string name="politics_overridden_no">Вы отметили этот сюжет как «не политика».</string>
+    <string name="politics_overridden_yes">Вы отметили этот сюжет как политический.</string>
+    <string name="politics_mark_not">Это не политика</string>
+    <string name="politics_reset">Вернуть автоматическую оценку</string>
+
+    <!-- Categories screen -->
+    <string name="categories_hint">Нажмите на тему, чтобы открыть её ленту. Долгое нажатие — настроить интерес.</string>
+    <string name="category_count_zero">За сутки сюжетов нет</string>
+    <plurals name="category_count">
+        <item quantity="one">%d сюжет за сутки</item>
+        <item quantity="few">%d сюжета за сутки</item>
+        <item quantity="many">%d сюжетов за сутки</item>
+        <item quantity="other">%d сюжета за сутки</item>
+    </plurals>
+    <string name="interest_badge_more">Интересно</string>
+    <string name="interest_badge_less">Реже</string>
+    <string name="interests_title">Интересы</string>
+    <string name="interests_reset">Сбросить</string>
+    <string name="interest_less">Меньше</string>
+    <string name="interest_neutral">Обычно</string>
+    <string name="interest_more">Больше</string>
+    <string name="interest_more_long">Показывать больше</string>
+    <string name="interest_neutral_long">Обычно</string>
+    <string name="interest_less_long">Показывать меньше</string>
+
+    <!-- Library -->
+    <string name="tab_favorites">Избранное</string>
+    <string name="tab_history">История</string>
+    <string name="favorites_empty_title">В избранном пока пусто</string>
+    <string name="favorites_empty_message">Нажмите на закладку у публикации, чтобы сохранить её. Избранное хранится на устройстве и доступно без интернета.</string>
+    <string name="history_empty_title">История пуста</string>
+    <string name="history_empty_message">Здесь появятся публикации, которые вы открывали.</string>
+    <string name="history_clear">Очистить историю</string>
+    <string name="history_clear_confirm">История прочитанного будет удалена с устройства. Избранное останется.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Поиск по новостям</string>
+    <string name="search_all_categories">Все темы</string>
+    <string name="search_hint_title">Поиск по сохранённым публикациям</string>
+    <string name="search_hint_message">Ищите по словам из заголовков и текстов. Поиск работает и без интернета.</string>
+    <string name="search_empty_title">Ничего не найдено</string>
+    <string name="search_empty_message">По запросу «%1$s» публикаций нет. Попробуйте другое слово или другую тему.</string>
+
+    <!-- Sources -->
+    <string name="sources_add">Добавить</string>
+    <string name="sources_refresh_all">Обновить все</string>
+    <string name="sources_reset">Восстановить стандартные</string>
+    <string name="sources_reset_confirm">Встроенные источники вернутся к исходным адресам, категориям и состоянию. Ваши собственные источники останутся.</string>
+    <string name="sources_about">Об источниках</string>
+    <string name="sources_about_text">NewsHub получает публикации только законными способами.\n\n• RSS и Atom — официальные ленты изданий. Если указан адрес сайта, приложение ищет ссылку на ленту на его странице.\n\n• Telegram — публичное веб-превью каналов (t.me/s/…), которое Telegram показывает любому посетителю. Работает только для открытых каналов с включённым превью и показывает последние ~20 постов. Это не официальный API: страница может измениться. Через Telegram Bot API читать чужие каналы нельзя — бот получает посты только из каналов, где он администратор. Закрытые каналы требуют клиентского API (MTProto/TDLib) с вашей авторизацией по номеру телефона; этого приложение не делает.\n\n• Уровни проверки встроенных источников: «подтверждён» — адрес подтверждён издателем или каталогом лент; «известный адрес» — общеизвестный адрес; «поиск на сайте» — лента ищется на сайте; «не проверен» — адрес не найден, источник выключен до ручной настройки.\n\nНедоступный источник не мешает остальным: его ошибка видна в списке, а повторные попытки делаются с увеличивающейся паузой.</string>
+    <string name="sources_summary">Активны %1$d из %2$d</string>
+    <string name="sources_telegram_off">Telegram выключен</string>
+    <string name="sources_other">Другое</string>
+    <plurals name="sources_failing">
+        <item quantity="one">%d с ошибкой</item>
+        <item quantity="few">%d с ошибками</item>
+        <item quantity="many">%d с ошибками</item>
+        <item quantity="other">%d с ошибками</item>
+    </plurals>
+    <plurals name="publications">
+        <item quantity="one">%d публикация</item>
+        <item quantity="few">%d публикации</item>
+        <item quantity="many">%d публикаций</item>
+        <item quantity="other">%d публикации</item>
+    </plurals>
+    <string name="source_type_rss">RSS или сайт</string>
+    <string name="source_type_telegram">Telegram-канал</string>
+    <string name="source_type_rss_short">RSS</string>
+    <string name="source_type_telegram_short">Telegram</string>
+    <string name="source_type_demo">Демо</string>
+    <string name="source_status_ok">Обновлён %1$s · %2$s</string>
+    <string name="source_status_disabled">Выключен</string>
+    <string name="source_status_needs_setup">Требует настройки: адрес не указан</string>
+    <string name="source_status_never">Ещё не проверялся</string>
+    <string name="source_toggle_cd">Источник «%1$s»</string>
+    <string name="source_add_title">Новый источник</string>
+    <string name="source_edit_title">Источник</string>
+    <string name="source_add_info">Укажите адрес RSS-ленты, адрес сайта (лента будет найдена автоматически) или имя публичного Telegram-канала. Нажмите «Проверить», чтобы убедиться, что источник отвечает.</string>
+    <string name="source_address_hint_rss">Адрес ленты или сайта</string>
+    <string name="source_address_hint_telegram">Имя канала</string>
+    <string name="source_address_help_rss">Например, https://example.ru/rss или https://example.ru</string>
+    <string name="source_address_help_telegram">Например, @channel или https://t.me/channel. Только публичные каналы.</string>
+    <string name="source_name_hint">Название</string>
+    <string name="source_category_hint">Категория</string>
+    <string name="source_test">Проверить</string>
+    <string name="source_save">Сохранить</string>
+    <string name="source_delete">Удалить источник</string>
+    <string name="source_delete_confirm">Источник и его публикации будут удалены с устройства. Публикации из избранного сохранятся.</string>
+    <string name="source_test_failed">Проверка не прошла. %1$s</string>
+    <string name="source_test_latest">Последняя: «%1$s»</string>
+    <plurals name="source_test_ok">
+        <item quantity="one">Источник работает: получена %d публикация</item>
+        <item quantity="few">Источник работает: получено %d публикации</item>
+        <item quantity="many">Источник работает: получено %d публикаций</item>
+        <item quantity="other">Источник работает: получено %d публикации</item>
+    </plurals>
+    <string name="source_discovered">Найдена лента: %1$s</string>
+    <string name="source_last_error">Последняя ошибка: %1$s (%2$s)</string>
+    <string name="source_last_ok">Последнее обновление: %1$s, публикаций в ленте: %2$d</string>
+    <string name="source_backoff">Следующая автоматическая попытка не раньше %1$s</string>
+    <string name="source_verification_label">Проверка адреса</string>
+    <string name="verification_confirmed">подтверждён издателем или каталогом лент</string>
+    <string name="verification_known">общеизвестный адрес, проверяется при обновлении</string>
+    <string name="verification_discovery">указан сайт, лента ищется на его странице</string>
+    <string name="verification_unverified">не проверен — укажите адрес вручную</string>
+
+    <!-- Errors -->
+    <string name="error_kind_network">Нет соединения</string>
+    <string name="error_kind_timeout">Источник не ответил вовремя</string>
+    <string name="error_kind_http">Ошибка сервера</string>
+    <string name="error_kind_rate_limited">Слишком частые запросы, пауза</string>
+    <string name="error_kind_parse">Некорректная лента</string>
+    <string name="error_kind_not_a_feed">По адресу нет ленты</string>
+    <string name="error_kind_too_large">Ответ слишком большой</string>
+    <string name="error_kind_config">Источник не настроен</string>
+    <string name="error_kind_unsupported">Тип источника не поддерживается</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_no_link">У публикации нет ссылки на оригинал</string>
+    <string name="error_no_browser">Не найден браузер для открытия ссылки</string>
+    <string name="error_no_share_target">Нет приложений, чтобы поделиться</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Новые сюжеты</string>
+    <string name="notification_channel_description">Уведомления о новых публикациях после фонового обновления</string>
+    <string name="notifications_denied">Без разрешения уведомления показывать нельзя. Его можно выдать в настройках системы.</string>
+    <plurals name="notification_important">
+        <item quantity="one">%d важное событие</item>
+        <item quantity="few">%d важных события</item>
+        <item quantity="many">%d важных событий</item>
+        <item quantity="other">%d важного события</item>
+    </plurals>
+    <plurals name="notification_new">
+        <item quantity="one">%d новый сюжет</item>
+        <item quantity="few">%d новых сюжета</item>
+        <item quantity="many">%d новых сюжетов</item>
+        <item quantity="other">%d нового сюжета</item>
+    </plurals>
+
+    <!-- Settings -->
+    <string name="pref_group_feed">Лента</string>
+    <string name="pref_default_mode">Режим ленты при запуске</string>
+    <string name="pref_default_period">Период по умолчанию</string>
+    <string name="pref_sort">Сортировка</string>
+    <string name="pref_page_size">Сколько публикаций показывать</string>
+    <string name="pref_group_duplicates">Объединять одинаковые новости</string>
+    <string name="pref_group_duplicates_summary">Публикации разных источников об одном событии показываются одной карточкой со ссылками на все оригиналы</string>
+    <string name="pref_group_politics">Политика</string>
+    <string name="pref_politics_filter">Фильтр политики</string>
+    <string name="pref_politics_filter_summary">Скрывать или ограничивать политические публикации. Они не удаляются и доступны в разделе «Скрытые публикации».</string>
+    <string name="pref_politics_mode">Что делать с политикой</string>
+    <string name="pref_politics_sensitivity">Чувствительность</string>
+    <string name="pref_politics_groups">Что считать политикой</string>
+    <string name="pref_politics_groups_summary">Внутренняя и международная политика, военные действия</string>
+    <string name="pref_politics_block">Свои стоп-слова</string>
+    <string name="pref_politics_allow">Исключения</string>
+    <string name="pref_words_dialog_message">Слова или фразы через запятую. Публикации с ними будут считаться политическими.</string>
+    <string name="pref_allow_dialog_message">Слова или фразы через запятую. Публикации с ними никогда не считаются политическими.</string>
+    <string name="pref_politics_hidden">Скрытые публикации</string>
+    <string name="pref_politics_hidden_summary">Посмотреть, что скрыл фильтр, и отменить пометку</string>
+    <string name="pref_politics_rules">Как работает фильтр</string>
+    <string name="pref_politics_rules_summary">Список правил и их вес — без скрытой логики и платных сервисов</string>
+    <string name="politics_rules_intro">Фильтр работает на устройстве и не использует внешние или платные сервисы. Каждое правило имеет вес: совпадение в заголовке считается дважды. Публикация считается политической, если сумма весов не меньше %1$d (зависит от чувствительности). Упоминание государства само по себе не делает новость политической: слабые слова (вес 1) порог не набирают.</string>
+    <string name="politics_rules_weight">Вес %1$d:</string>
+    <string name="politics_group_domestic">Внутренняя политика</string>
+    <string name="politics_group_geo">Международная политика и дипломатия</string>
+    <string name="politics_group_military">Военные действия</string>
+    <string name="politics_group_off">выключено</string>
+    <string name="politics_rules_user_block">Ваши стоп-слова (вес 3): %1$s</string>
+    <string name="politics_rules_user_allow">Ваши исключения: %1$s</string>
+    <string name="politics_rules_exceptions">Встроенные исключения: %1$s</string>
+    <string name="pref_group_interesting">Только интересное</string>
+    <string name="pref_interests_summary">Какие темы показывать чаще или реже</string>
+    <string name="pref_use_history">Учитывать историю чтения</string>
+    <string name="pref_use_history_summary">Темы, которые вы часто открываете, поднимаются выше. История хранится только на устройстве.</string>
+    <string name="pref_group_refresh">Обновление</string>
+    <string name="pref_refresh_interval">Автообновление</string>
+    <string name="pref_wifi_only">Только по Wi‑Fi</string>
+    <string name="pref_wifi_only_summary">Фоновое обновление только в безлимитных сетях</string>
+    <string name="pref_telegram">Источники Telegram</string>
+    <string name="pref_telegram_summary">Читать публичные каналы через веб-превью t.me</string>
+    <string name="pref_retention">Хранить публикации</string>
+    <string name="pref_group_notifications">Уведомления</string>
+    <string name="pref_notifications">Уведомлять о новых сюжетах</string>
+    <string name="pref_notifications_summary">После фонового обновления</string>
+    <string name="pref_notify_important">Только важное</string>
+    <string name="pref_notify_important_summary">Только события, о которых сообщили два и более источника</string>
+    <string name="pref_group_appearance">Оформление</string>
+    <string name="pref_theme">Тема</string>
+    <string name="pref_text_scale">Размер текста</string>
+    <string name="pref_images">Изображения</string>
+    <string name="pref_group_data">Данные</string>
+    <string name="pref_clear_history_summary">Удалить историю прочитанного</string>
+    <string name="pref_clear_cache">Очистить сохранённые публикации</string>
+    <string name="pref_clear_cache_summary">Избранное сохранится</string>
+    <string name="clear_cache_confirm">Все загруженные публикации, кроме избранного, будут удалены с устройства. При следующем обновлении источники загрузятся заново.</string>
+    <string name="pref_privacy">Конфиденциальность</string>
+    <string name="pref_privacy_summary">Какие данные использует приложение</string>
+    <string name="privacy_text">NewsHub не собирает и не отправляет данные о вас. Нет аккаунтов, аналитики и рекламы. Избранное, история чтения и настройки хранятся только на этом устройстве и не попадают в резервные копии.\n\nСеть используется только для загрузки лент, страниц Telegram-каналов и изображений с серверов самих источников. Секретных ключей API в приложении нет.</string>
+    <string name="pref_about">О приложении</string>
+    <string name="pref_about_summary">Версия %1$s</string>
+    <string name="about_text">NewsHub %1$s\n\nАгрегатор новостей из RSS-лент и публичных Telegram-каналов: одна лента, группировка одинаковых новостей, прозрачный фильтр политики, избранное и офлайн-доступ.\n\nПриложение показывает заголовок, короткий фрагмент и ссылку на оригинал. Права на публикации принадлежат их авторам и изданиям.</string>
+    <string name="pref_group_dev">Для разработчиков</string>
+    <string name="pref_demo">Демо-данные</string>
+    <string name="pref_demo_summary">Добавить два демо-источника со сгенерированными публикациями. Они помечены «ДЕМО» и не являются новостями. Доступно только в отладочной сборке.</string>
+</resources>

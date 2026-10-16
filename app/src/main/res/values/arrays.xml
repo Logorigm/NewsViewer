@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feed_mode_entries">
+        <item>Всё</item>
+        <item>Без политики</item>
+        <item>Только интересное</item>
+    </string-array>
+    <string-array name="feed_mode_values" translatable="false">
+        <item>all</item>
+        <item>no_politics</item>
+        <item>interesting</item>
+    </string-array>
+
+    <string-array name="period_entries">
+        <item>За день</item>
+        <item>За неделю</item>
+        <item>За месяц</item>
+        <item>За год</item>
+        <item>За всё время</item>
+    </string-array>
+    <string-array name="period_values" translatable="false">
+        <item>day</item>
+        <item>week</item>
+        <item>month</item>
+        <item>year</item>
+        <item>all</item>
+    </string-array>
+
+    <string-array name="sort_entries">
+        <item>Сначала новые</item>
+        <item>Больше источников</item>
+    </string-array>
+    <string-array name="sort_values" translatable="false">
+        <item>newest</item>
+        <item>sources</item>
+    </string-array>
+
+    <string-array name="page_size_entries">
+        <item>50 публикаций</item>
+        <item>100 публикаций</item>
+        <item>200 публикаций</item>
+        <item>500 публикаций</item>
+    </string-array>
+    <string-array name="page_size_values" translatable="false">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="politics_mode_entries">
+        <item>Ограничивать: только заметные события, не больше пятой части ленты</item>
+        <item>Скрывать полностью</item>
+    </string-array>
+    <string-array name="politics_mode_values" translatable="false">
+        <item>limit</item>
+        <item>hide</item>
+    </string-array>
+
+    <string-array name="sensitivity_entries">
+        <item>Мягкая — только явная политика</item>
+        <item>Обычная</item>
+        <item>Строгая — любые упоминания власти</item>
+    </string-array>
+    <string-array name="sensitivity_values" translatable="false">
+        <item>soft</item>
+        <item>normal</item>
+        <item>strict</item>
+    </string-array>
+
+    <string-array name="politics_group_entries">
+        <item>Внутренняя политика</item>
+        <item>Международная политика и дипломатия</item>
+        <item>Военные действия</item>
+    </string-array>
+    <string-array name="politics_group_values" translatable="false">
+        <item>domestic</item>
+        <item>geo</item>
+        <item>military</item>
+    </string-array>
+
+    <string-array name="refresh_entries">
+        <item>Только вручную</item>
+        <item>Каждые 15 минут</item>
+        <item>Каждые 30 минут</item>
+        <item>Каждый час</item>
+        <item>Каждые 3 часа</item>
+        <item>Каждые 6 часов</item>
+        <item>Каждые 12 часов</item>
+    </string-array>
+    <string-array name="refresh_values" translatable="false">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>720</item>
+    </string-array>
+
+    <string-array name="retention_entries">
+        <item>7 дней</item>
+        <item>30 дней</item>
+        <item>90 дней</item>
+        <item>Год</item>
+    </string-array>
+    <string-array name="retention_values" translatable="false">
+        <item>7</item>
+        <item>30</item>
+        <item>90</item>
+        <item>365</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Тёмная</item>
+        <item>Светлая</item>
+        <item>Как в системе</item>
+    </string-array>
+    <string-array name="theme_values" translatable="false">
+        <item>dark</item>
+        <item>light</item>
+        <item>system</item>
+    </string-array>
+
+    <string-array name="text_scale_entries">
+        <item>Мелкий</item>
+        <item>Обычный</item>
+        <item>Крупный</item>
+        <item>Очень крупный</item>
+    </string-array>
+    <string-array name="text_scale_values" translatable="false">
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>xlarge</item>
+    </string-array>
+
+    <string-array name="images_entries">
+        <item>Всегда</item>
+        <item>Только по Wi‑Fi</item>
+        <item>Не загружать</item>
+    </string-array>
+    <string-array name="images_values" translatable="false">
+        <item>always</item>
+        <item>wifi</item>
+        <item>never</item>
+    </string-array>
+</resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_feed">
+
+        <ListPreference
+            app:defaultValue="all"
+            app:entries="@array/feed_mode_entries"
+            app:entryValues="@array/feed_mode_values"
+            app:iconSpaceReserved="false"
+            app:key="default_mode"
+            app:title="@string/pref_default_mode"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="week"
+            app:entries="@array/period_entries"
+            app:entryValues="@array/period_values"
+            app:iconSpaceReserved="false"
+            app:key="default_period"
+            app:title="@string/pref_default_period"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="newest"
+            app:entries="@array/sort_entries"
+            app:entryValues="@array/sort_values"
+            app:iconSpaceReserved="false"
+            app:key="sort"
+            app:title="@string/pref_sort"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="100"
+            app:entries="@array/page_size_entries"
+            app:entryValues="@array/page_size_values"
+            app:iconSpaceReserved="false"
+            app:key="page_size"
+            app:title="@string/pref_page_size"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="group_duplicates"
+            app:summary="@string/pref_group_duplicates_summary"
+            app:title="@string/pref_group_duplicates" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_politics">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="politics_filter"
+            app:summary="@string/pref_politics_filter_summary"
+            app:title="@string/pref_politics_filter" />
+
+        <ListPreference
+            app:defaultValue="limit"
+            app:dependency="politics_filter"
+            app:entries="@array/politics_mode_entries"
+            app:entryValues="@array/politics_mode_values"
+            app:iconSpaceReserved="false"
+            app:key="politics_mode"
+            app:title="@string/pref_politics_mode"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="normal"
+            app:entries="@array/sensitivity_entries"
+            app:entryValues="@array/sensitivity_values"
+            app:iconSpaceReserved="false"
+            app:key="politics_sensitivity"
+            app:title="@string/pref_politics_sensitivity"
+            app:useSimpleSummaryProvider="true" />
+
+        <MultiSelectListPreference
+            app:defaultValue="@array/politics_group_values"
+            app:entries="@array/politics_group_entries"
+            app:entryValues="@array/politics_group_values"
+            app:iconSpaceReserved="false"
+            app:key="politics_groups"
+            app:summary="@string/pref_politics_groups_summary"
+            app:title="@string/pref_politics_groups" />
+
+        <EditTextPreference
+            app:defaultValue=""
+            app:dialogMessage="@string/pref_words_dialog_message"
+            app:iconSpaceReserved="false"
+            app:key="politics_block_words"
+            app:title="@string/pref_politics_block"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue=""
+            app:dialogMessage="@string/pref_allow_dialog_message"
+            app:iconSpaceReserved="false"
+            app:key="politics_allow_words"
+            app:title="@string/pref_politics_allow"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="politics_hidden"
+            app:summary="@string/pref_politics_hidden_summary"
+            app:title="@string/pref_politics_hidden" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="politics_rules"
+            app:summary="@string/pref_politics_rules_summary"
+            app:title="@string/pref_politics_rules" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_interesting">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="interests"
+            app:summary="@string/pref_interests_summary"
+            app:title="@string/interests_title" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="use_read_history"
+            app:summary="@string/pref_use_history_summary"
+            app:title="@string/pref_use_history" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_refresh">
+
+        <ListPreference
+            app:defaultValue="60"
+            app:entries="@array/refresh_entries"
+            app:entryValues="@array/refresh_values"
+            app:iconSpaceReserved="false"
+            app:key="refresh_interval"
+            app:title="@string/pref_refresh_interval"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="wifi_only"
+            app:summary="@string/pref_wifi_only_summary"
+            app:title="@string/pref_wifi_only" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="telegram_enabled"
+            app:summary="@string/pref_telegram_summary"
+            app:title="@string/pref_telegram" />
+
+        <ListPreference
+            app:defaultValue="30"
+            app:entries="@array/retention_entries"
+            app:entryValues="@array/retention_values"
+            app:iconSpaceReserved="false"
+            app:key="retention_days"
+            app:title="@string/pref_retention"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_notifications">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="notifications"
+            app:summary="@string/pref_notifications_summary"
+            app:title="@string/pref_notifications" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:dependency="notifications"
+            app:iconSpaceReserved="false"
+            app:key="notify_important_only"
+            app:summary="@string/pref_notify_important_summary"
+            app:title="@string/pref_notify_important" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_appearance">
+
+        <ListPreference
+            app:defaultValue="dark"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:iconSpaceReserved="false"
+            app:key="theme"
+            app:title="@string/pref_theme"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="normal"
+            app:entries="@array/text_scale_entries"
+            app:entryValues="@array/text_scale_values"
+            app:iconSpaceReserved="false"
+            app:key="text_scale"
+            app:title="@string/pref_text_scale"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="always"
+            app:entries="@array/images_entries"
+            app:entryValues="@array/images_values"
+            app:iconSpaceReserved="false"
+            app:key="images"
+            app:title="@string/pref_images"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_group_data">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="clear_history"
+            app:summary="@string/pref_clear_history_summary"
+            app:title="@string/history_clear" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="clear_cache"
+            app:summary="@string/pref_clear_cache_summary"
+            app:title="@string/pref_clear_cache" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="privacy"
+            app:summary="@string/pref_privacy_summary"
+            app:title="@string/pref_privacy" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="about"
+            app:title="@string/pref_about" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false"
+        app:key="dev_group"
+        app:title="@string/pref_group_dev">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="dev_demo_data"
+            app:summary="@string/pref_demo_summary"
+            app:title="@string/pref_demo" />
+    </PreferenceCategory>
+</PreferenceScreen>

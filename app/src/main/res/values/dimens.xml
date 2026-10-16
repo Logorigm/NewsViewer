@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">16dp</dimen>
+    <!-- Horizontal inset of content; grows on tablets so lines stay readable. -->
+    <dimen name="content_inset">16dp</dimen>
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_gap">10dp</dimen>
+    <dimen name="thumb_size">92dp</dimen>
+    <dimen name="avatar_size">22dp</dimen>
+    <dimen name="touch_target">48dp</dimen>
+    <dimen name="article_image_height">220dp</dimen>
+</resources>

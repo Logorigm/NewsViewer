@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.newshub.app.ui.feed.FeedFragment"
+        android:label="@string/nav_feed" />
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.newshub.app.ui.categories.CategoriesFragment"
+        android:label="@string/nav_categories" />
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.newshub.app.ui.library.LibraryFragment"
+        android:label="@string/nav_favorites" />
+
+    <fragment
+        android:id="@+id/sourcesFragment"
+        android:name="com.newshub.app.ui.sources.SourcesFragment"
+        android:label="@string/nav_sources" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.newshub.app.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings" />
+
+    <fragment
+        android:id="@+id/categoryFeedFragment"
+        android:name="com.newshub.app.ui.feed.FeedFragment"
+        android:label="@string/nav_categories">
+        <argument
+            android:name="screen"
+            android:defaultValue="category"
+            app:argType="string" />
+        <argument
+            android:name="category"
+            android:defaultValue="main"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hiddenFragment"
+        android:name="com.newshub.app.ui.feed.FeedFragment"
+        android:label="@string/hidden_title">
+        <argument
+            android:name="screen"
+            android:defaultValue="hidden"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.newshub.app.ui.article.ArticleFragment"
+        android:label="@string/article_title">
+        <argument
+            android:name="articleId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.newshub.app.ui.search.SearchFragment"
+        android:label="@string/action_search" />
+</navigation>

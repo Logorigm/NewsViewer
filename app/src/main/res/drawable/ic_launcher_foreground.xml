@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stack of three headline bars with an accent block: an abstract "news front page". -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#7AA2F0" android:pathData="M34,36h14v14h-14z" />
+    <path android:fillColor="#E8EAED" android:pathData="M52,36h22v5h-22z" />
+    <path android:fillColor="#A4AAB3" android:pathData="M52,45h16v5h-16z" />
+    <path android:fillColor="#E8EAED" android:pathData="M34,56h40v5h-40z" />
+    <path android:fillColor="#A4AAB3" android:pathData="M34,65h32v5h-32z" />
+</vector>

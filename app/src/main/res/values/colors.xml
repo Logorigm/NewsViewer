@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light palette. values-night/colors.xml redefines the same names for the dark theme. -->
+    <color name="nh_background">#F4F5F7</color>
+    <color name="nh_surface">#FFFFFF</color>
+    <color name="nh_surface_variant">#ECEEF1</color>
+    <color name="nh_surface_high">#E3E6EA</color>
+    <color name="nh_outline">#DDE1E6</color>
+    <color name="nh_outline_strong">#B8BEC7</color>
+    <color name="nh_text_primary">#111317</color>
+    <color name="nh_text_secondary">#4F5660</color>
+    <color name="nh_text_tertiary">#7B828C</color>
+    <color name="nh_accent">#2A62D4</color>
+    <color name="nh_on_accent">#FFFFFF</color>
+    <color name="nh_accent_container">#DCE6FA</color>
+    <color name="nh_on_accent_container">#0D2A63</color>
+    <color name="nh_error">#B3261E</color>
+    <color name="nh_warning">#8A5A00</color>
+    <color name="nh_warning_container">#F6E7C8</color>
+    <color name="nh_success">#2C7A4B</color>
+    <color name="nh_skeleton">#E4E7EB</color>
+    <color name="nh_scrim">#66000000</color>
+    <color name="launcher_background">#0A0B0D</color>
+
+    <!-- Category markers: muted tones that work on both themes. -->
+    <color name="cat_main">#5E8EE8</color>
+    <color name="cat_tech">#4F86C6</color>
+    <color name="cat_ai">#8577D9</color>
+    <color name="cat_science">#3E9FAA</color>
+    <color name="cat_games">#C8714F</color>
+    <color name="cat_internet">#B56A9E</color>
+    <color name="cat_entertainment">#C29A3A</color>
+    <color name="cat_world">#7A8796</color>
+    <color name="cat_incidents">#C25B57</color>
+    <color name="cat_economy">#4E9A6E</color>
+    <color name="cat_sport">#D08A3E</color>
+    <color name="cat_health">#4FA391</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.NewsHub.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/nh_surface</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/nh_outline</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.NewsHub.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.NewsHub.ToolbarTitle</item>
+        <item name="android:background">@color/nh_background</item>
+    </style>
+
+    <style name="Widget.NewsHub.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/nh_background</item>
+        <item name="backgroundTint">@color/nh_background</item>
+        <item name="itemIconTint">@color/nav_item</item>
+        <item name="itemTextColor">@color/nav_item</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.NewsHub.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipCornerRadius">18dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.NewsHub.Chip</item>
+    </style>
+
+    <style name="ShapeAppearance.NewsHub.Thumb" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="ShapeAppearance.NewsHub.Image" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nh_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.Chip" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.CardTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nh_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.CardBody" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/nh_text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.Meta" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/nh_text_tertiary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.MetaStrong" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nh_text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.Section" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nh_text_tertiary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nh_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/nh_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.NewsHub.Badge" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+</resources>

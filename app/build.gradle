@@ -1,0 +1,115 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+// Optional release signing. Create keystore.properties (not committed) with
+// storeFile, storePassword, keyAlias, keyPassword to get a signed release APK.
+def keystorePropsFile = rootProject.file("keystore.properties")
+def keystoreProps = new Properties()
+if (keystorePropsFile.exists()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+
+android {
+    namespace 'com.newshub.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.newshub.app"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                        "room.schemaLocation": "$projectDir/schemas".toString(),
+                        "room.incremental"   : "true"
+                ]
+            }
+        }
+    }
+
+    signingConfigs {
+        if (keystorePropsFile.exists()) {
+            release {
+                storeFile rootProject.file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+        release {
+            // Shrinking is off on purpose: stability first. See README for enabling R8.
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (keystorePropsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        buildConfig true
+        viewBinding false
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+        }
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds true
+    }
+}
+
+dependencies {
+    implementation libs.androidx.activity
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.swiperefreshlayout
+    implementation libs.androidx.lifecycle.viewmodel
+    implementation libs.androidx.lifecycle.livedata
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
+    implementation libs.androidx.room.runtime
+    annotationProcessor libs.androidx.room.compiler
+    implementation libs.androidx.work.runtime
+    implementation libs.androidx.preference
+    implementation libs.androidx.browser
+    implementation libs.okhttp
+    implementation libs.retrofit
+    implementation libs.glide
+    implementation libs.jsoup
+
+    testImplementation libs.junit
+    testImplementation libs.robolectric
+    testImplementation libs.androidx.test.core
+    testImplementation libs.androidx.test.ext.junit
+    testImplementation libs.androidx.arch.core.testing
+    testImplementation libs.androidx.room.testing
+    testImplementation libs.okhttp.mockwebserver
+    // Real org.json implementation for plain JVM tests (android.jar only has stubs).
+    testImplementation libs.org.json
+}

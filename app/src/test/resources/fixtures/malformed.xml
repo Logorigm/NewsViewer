@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Сломанная лента &copy; 2026
+    <item>
+      <title>Нормальный заголовок &nbsp;&mdash; с сущностями</title>
+      <link>https://broken.example/1</link>
+      <description><p>Неэкранированный <b>HTML</b> внутри описания<br></description>
+      <pubDate>Wed, 14 Oct 26 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Элемент без закрывающего тега
+      <link>https://broken.example/2</link>
+    </item>

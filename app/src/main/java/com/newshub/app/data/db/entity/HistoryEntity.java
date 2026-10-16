@@ -1,6 +1,7 @@
 package com.newshub.app.data.db.entity;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
@@ -14,6 +15,7 @@ public class HistoryEntity {
     public HistoryEntity() {
     }
 
+    @Ignore
     public HistoryEntity(long articleId, long readAt) {
         this.articleId = articleId;
         this.readAt = readAt;

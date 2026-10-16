@@ -82,6 +82,19 @@ android {
     }
 }
 
+tasks.withType(Test).configureEach {
+    testLogging {
+        events "failed", "skipped"
+        exceptionFormat "full"
+    }
+    afterSuite { desc, result ->
+        if (desc.parent == null) {
+            println "Unit tests: ${result.testCount} run, ${result.successfulTestCount} passed, " +
+                    "${result.failedTestCount} failed, ${result.skippedTestCount} skipped"
+        }
+    }
+}
+
 dependencies {
     implementation libs.androidx.activity
     implementation libs.androidx.appcompat

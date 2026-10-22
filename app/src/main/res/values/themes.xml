@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NewsHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nh_accent</item>
+        <item name="colorOnPrimary">@color/nh_on_accent</item>
+        <item name="colorPrimaryContainer">@color/nh_accent_container</item>
+        <item name="colorOnPrimaryContainer">@color/nh_on_accent_container</item>
+        <item name="colorSecondary">@color/nh_accent</item>
+        <item name="colorOnSecondary">@color/nh_on_accent</item>
+        <item name="colorSecondaryContainer">@color/nh_accent_container</item>
+        <item name="colorOnSecondaryContainer">@color/nh_on_accent_container</item>
+        <item name="colorTertiary">@color/nh_accent</item>
+        <item name="android:colorBackground">@color/nh_background</item>
+        <item name="colorOnBackground">@color/nh_text_primary</item>
+        <item name="colorSurface">@color/nh_background</item>
+        <item name="colorOnSurface">@color/nh_text_primary</item>
+        <item name="colorSurfaceVariant">@color/nh_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/nh_text_secondary</item>
+        <item name="colorSurfaceContainerLowest">@color/nh_background</item>
+        <item name="colorSurfaceContainerLow">@color/nh_surface</item>
+        <item name="colorSurfaceContainer">@color/nh_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/nh_surface_variant</item>
+        <item name="colorSurfaceContainerHighest">@color/nh_surface_high</item>
+        <item name="colorOutline">@color/nh_outline_strong</item>
+        <item name="colorOutlineVariant">@color/nh_outline</item>
+        <item name="colorError">@color/nh_error</item>
+        <item name="android:windowBackground">@color/nh_background</item>
+        <item name="materialCardViewStyle">@style/Widget.NewsHub.Card</item>
+        <item name="toolbarStyle">@style/Widget.NewsHub.Toolbar</item>
+        <item name="bottomNavigationStyle">@style/Widget.NewsHub.BottomNav</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.NewsHub.BottomSheet</item>
+    </style>
+
+    <style name="ThemeOverlay.NewsHub.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.NewsHub.BottomSheet</item>
+    </style>
+
+    <style name="Widget.NewsHub.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/nh_surface</item>
+    </style>
+</resources>

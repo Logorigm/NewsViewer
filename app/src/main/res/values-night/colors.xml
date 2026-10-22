@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark (default) palette: black-graphite background, restrained blue accent. -->
+    <color name="nh_background">#0A0B0D</color>
+    <color name="nh_surface">#131518</color>
+    <color name="nh_surface_variant">#1A1D21</color>
+    <color name="nh_surface_high">#22262B</color>
+    <color name="nh_outline">#23272D</color>
+    <color name="nh_outline_strong">#3A4049</color>
+    <color name="nh_text_primary">#E8EAED</color>
+    <color name="nh_text_secondary">#A4AAB3</color>
+    <color name="nh_text_tertiary">#767D87</color>
+    <color name="nh_accent">#7AA2F0</color>
+    <color name="nh_on_accent">#061533</color>
+    <color name="nh_accent_container">#18284A</color>
+    <color name="nh_on_accent_container">#D3E1FF</color>
+    <color name="nh_error">#F2A39B</color>
+    <color name="nh_warning">#E6BD6A</color>
+    <color name="nh_warning_container">#3A2E14</color>
+    <color name="nh_success">#86CFA1</color>
+    <color name="nh_skeleton">#1D2025</color>
+    <color name="nh_scrim">#99000000</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title type="text">Atom-лента</title>
+  <id>urn:uuid:feed</id>
+  <updated>2026-10-16T08:00:00Z</updated>
+  <entry>
+    <title type="html">Запуск ракеты &amp;mdash; успешно</title>
+    <link rel="alternate" type="text/html" href="https://example.com/a/1"/>
+    <link rel="enclosure" type="image/jpeg" href="https://example.com/a/1.jpg"/>
+    <id>tag:example.com,2026:1</id>
+    <published>2026-10-16T07:30:00+03:00</published>
+    <updated>2026-10-16T07:45:00+03:00</updated>
+    <author><name>Редакция</name></author>
+    <category term="space" label="Космос"/>
+    <summary type="html">&lt;p&gt;Ракета вывела спутник на орбиту.&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Второй материал</title>
+    <link href="https://example.com/a/2"/>
+    <id>tag:example.com,2026:2</id>
+    <updated>2026-10-15T20:00:00Z</updated>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Содержимое <em>XHTML</em></p><img src="https://example.com/x.webp"/></div></content>
+    <media:thumbnail url="https://example.com/thumb2.jpg"/>
+  </entry>
+</feed>

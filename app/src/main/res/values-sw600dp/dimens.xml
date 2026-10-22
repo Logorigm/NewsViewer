@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_inset">40dp</dimen>
+    <dimen name="thumb_size">112dp</dimen>
+    <dimen name="article_image_height">320dp</dimen>
+</resources>
